@@ -1,0 +1,30 @@
+/* Динамика эфира поверх покадровых композиций direction.css. */
+.broadcast{--cut-color:#ff6d9a}
+.m-ribbons,.m-stars,.m-flash,.m-pause{position:absolute;inset:0;pointer-events:none}
+.m-ribbons{z-index:1;overflow:hidden;opacity:.68;mix-blend-mode:screen}
+.m-ribbons::before,.m-ribbons::after{content:"";position:absolute;inset:-85% -55%;background:repeating-linear-gradient(127deg,transparent 0 7.5%,#ff2c7970 7.7% 8.3%,transparent 8.55% 15.8%,#ffbb6355 16% 16.35%,transparent 16.7% 25%);animation:m-ribbon-drift 16s linear infinite}
+.m-ribbons::after{inset:-65% -45%;opacity:.7;transform:rotate(12deg);background:repeating-linear-gradient(127deg,transparent 0 11%,#e9197670 11.15% 11.8%,transparent 12% 23%);animation-duration:23s;animation-direction:reverse}
+.m-stars{z-index:1;overflow:hidden}
+.m-star{position:absolute;left:var(--x);top:var(--y);width:var(--size);height:var(--size);border-radius:50%;background:#fff4cb;box-shadow:0 0 .7rem #ffbc73;animation:m-star-twinkle var(--speed) ease-in-out var(--delay) infinite alternate}
+.m-flash{z-index:5;opacity:0;background:linear-gradient(127deg,transparent 0 34%,#ff3f8d55 35% 39%,#fff0c355 39.3% 40%,transparent 40.3% 100%);mix-blend-mode:screen}
+.m-pause{z-index:7;display:none;place-items:center;background:#160d20b8;backdrop-filter:blur(4px);text-align:center}
+.m-pause b{display:block;padding:.32em .55em;border:2px solid #ffd477;background:#8f1c48;color:#fff0cc;font:950 clamp(2rem,8cqw,6rem)/1 Rubik,sans-serif;letter-spacing:.08em;box-shadow:.09em .11em #26101d;transform:rotate(-3deg)}
+.m-pause small{display:block;margin-top:.75rem;color:#fff5e2;font:800 clamp(.85rem,1.8cqw,1.2rem)/1.2 Nunito,sans-serif}
+.player-inner,.player-top{min-width:0}
+#episode-player .player-inner{width:100%;min-width:0;box-sizing:border-box}
+#episode-player .player-top{width:100%;min-width:0;flex-wrap:nowrap}
+.broadcast.m-paused .m-pause{display:grid}
+.broadcast.m-paused .m-ribbons,.broadcast.m-paused .m-star{animation-play-state:paused}
+.broadcast.m-cut .m-flash{animation:m-cut-flash .24s steps(3,end) both}
+.broadcast.m-cut .b-card strong{animation:m-type-hit .36s cubic-bezier(.18,.8,.24,1) both}
+.broadcast.m-cut .b-bug{animation:m-bug-tap .19s ease-out}
+.b-card strong{text-shadow:0 .055em #361223}
+.b-bug{box-shadow:0 .12em #272039}
+[data-plan=wide] .b-card strong,[data-plan=score] .b-card strong{letter-spacing:-.055em}
+@media(max-width:600px){#episode-player #player-chapter{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+@keyframes m-ribbon-drift{from{transform:translate3d(-3%,0,0) rotate(-3deg)}to{transform:translate3d(3%,0,0) rotate(3deg)}}
+@keyframes m-star-twinkle{from{opacity:.18;scale:.55}to{opacity:.92;scale:1.35}}
+@keyframes m-cut-flash{0%{opacity:0}25%{opacity:.9}55%{opacity:.24}100%{opacity:0}}
+@keyframes m-type-hit{0%{opacity:.35;scale:.78;filter:blur(2px)}66%{opacity:1;scale:1.06;filter:none}100%{scale:1}}
+@keyframes m-bug-tap{0%{scale:1}45%{scale:1.13}100%{scale:1}}
+@media(prefers-reduced-motion:reduce){.m-ribbons::before,.m-ribbons::after,.m-star{animation:none}.broadcast.m-cut .m-flash,.broadcast.m-cut .b-card strong,.broadcast.m-cut .b-bug{animation:none}}

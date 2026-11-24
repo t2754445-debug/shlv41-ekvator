@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Экватор влияния · ШЛВ 41</title>
+<meta name="description" content="Пиксельный вручает награды, Бумажный вскрывает дела. Найди свою команду в вечернем шоу ШЛВ 41, посмотри фото урока и узнай, кому досталась «Золотая Люсиль».">
+<meta property="og:title" content="Экватор влияния · Вечернее шоу ШЛВ 41">
+<meta property="og:description" content="Найди свою команду в выпуске ШЛВ 41. Истории из чатов, фото открытого урока, номинации и мультвставка.">
+<meta property="og:image" content="https://t2754445-debug.github.io/shlv41-ekvator/assets/cover.jpg">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="show.css">
+<link rel="stylesheet" href="theatre.css">
+<link rel="stylesheet" href="direction.css">
+<link rel="stylesheet" href="broadcast-motion.css">
+<script src="episode-data.js" defer></script>
+<script src="show.js" defer></script>
+<script src="assets/performance.js" defer></script>
+<script src="episode-player.js" defer></script>
+<script src="direction.js" defer></script>
+<script src="broadcast-motion.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner"><a class="brand" href="#start">ШЛВ <b>41</b></a>
+    <nav aria-label="Главы выпуска"><a href="#zal">Зал</a><a href="#episodes">Дела</a><a href="#cartoon">Мульт</a><a href="#teams">Команды</a><a href="#awards">Люсиль</a><a href="#rating">Рейтинг</a></nav>
+  </div>
+</header>
+<main id="start">
+  <section class="marquee" aria-labelledby="title">
+    <div class="marquee-board">
+      <p class="eyebrow house-bill"><span>ШЛВ 41</span> Вечернее шоу <b>№ 02</b></p>
+      <h1 id="title" aria-label="Экватор влияния"><span class="title-word" aria-hidden="true"><span style="--letter:#ff4a50">Э</span><span style="--letter:#ff7a45">к</span><span style="--letter:#f5c34f">в</span><span style="--letter:#2fd3c3">а</span><span style="--letter:#7d93ff">т</span><span style="--letter:#e46cf0">о</span><span style="--letter:#ff4a50">р</span></span><span class="title-word" aria-hidden="true"><span style="--letter:#ff4a50">в</span><span style="--letter:#ff7a45">л</span><span style="--letter:#f5c34f">и</span><span style="--letter:#2fd3c3">я</span><span style="--letter:#7d93ff">н</span><span style="--letter:#e46cf0">и</span><span style="--letter:#ff4a50">я</span></span></h1>
+      <p class="marquee-sub">Четыре занятия позади. Пиксельный приготовил награды. Бумажный распечатал переписку.</p>
+      <div class="marquee-actions"><button class="primary" data-show type="button">▶ Смотреть шоу</button><a href="#zal">Листать выпуск ↓</a></div>
+    </div>
+    <div class="house-ramp" aria-hidden="true"></div>
+  </section>
+  <div class="ticker"><span>4 из 8 занятий</span><span>11 003 сообщения</span><span>6 758 реакций</span><span>4 команды</span></div>
+  <section class="opening wrap chapter" id="zal" aria-labelledby="zal-title">
+    <p class="eyebrow">В студии</p><h2 id="zal-title">Приветствие зала</h2>
+    <p class="intro">Открывай карточки. За каждой один из людей, которых было слышно на экваторе.</p>
+    <div class="hall" id="hall"></div>
+    <details class="opening-detail"><summary>Дуэль ведущих</summary>
+    <div class="stage" id="stage" data-speaker="pixel">
+      <div class="stage-top"><span><i></i> В студии</span><span>4 из 8 занятий</span></div>
+      <div class="portraits" aria-hidden="true">
+        <div class="portrait pixel"><img id="pixel" src="assets/negan/idle.png" width="32" height="48" alt=""><span>Пиксельный Ниган</span></div>
+        <div class="portrait paper"><div class="cutout"><img src="assets/paper-stage.jpg" alt=""></div><span>Бумажный Ниган</span></div>
+      </div>
+      <div class="caption" aria-live="polite"><span id="speaker">Пиксельный Ниган</span><p id="line">Сорок первый, добрый вечер! Бумажный, встань. Людям надо поаплодировать.</p></div>
+      <div class="show-controls">
+        <button id="play" class="primary" type="button" aria-pressed="false">▶ Смотреть вступление</button>
+        <a class="quiet" href="#cartoon">К мультвставке ↓</a>
+      </div>
+    </div>
+    </details>
+  </section>
+  <section id="episodes" class="wrap chapter" aria-labelledby="episodes-title">
+    <p class="eyebrow">Бумажный у микрофона</p>
+    <h2 id="episodes-title">Скандалы, интриги, расследования</h2>
+    <p class="intro">Папки по переписке. На каждой есть источник и реплика ведущего.</p>
+    <button class="voice" data-start="3" data-end="3" type="button">▶ Реплика Бумажного</button>
+    <figure class="headline-photo">
+      <img src="assets/room.jpg" alt="Участники и гости на открытом уроке ШЛВ" width="1280" height="549" loading="lazy">
+      <figcaption>Открытый урок, 18 ноября. Фото Яны Савиной. <a href="https://t.me/c/3934706992/22/14277">Кадр из ветки</a></figcaption>
+    </figure>
+    <div class="story-grid case-files">
+      <details class="story case-file"><summary><span class="date">2 ноября · ДЗ</span><span class="case-title">Операция «23:59»</span></summary><p>Виктор написал, что у него не работает приложение, и перечислил, что уже проверил VPN и разные сети. В 18:10 в списке было 5 из 14, а ровно в 23:59 в чат прилетело «Сдала 😂».</p><p class="punch">Пиксельный: «Для тех, кто сдаёт в 23:59, минуты нужны с запасными секундами».</p><a class="source" href="https://t.me/c/3934706992/1490/4142">Проблема с приложением</a> · <a class="source" href="https://t.me/c/3934706992/1490/4213">Список ДЗ</a> · <a class="source" href="https://t.me/c/3934706992/1490/4490">Последняя минута</a></details>
+      <details class="story case-file"><summary><span class="date">12 ноября · кураторы</span><span class="case-title">Кто сегодня главный?</span></summary><p>Яна помогла «Империи» согласовать график и формат отчётов контролёров. Лена и Женя остались кураторами команды. Капитан заодно выяснил, какие у него права.</p><p class="punch">Бумажный: «Ты сначала выясни, кто у тебя куратор. Категорию B выдадим после».</p><a class="source" href="https://t.me/c/3934706992/1490/11916">График и регламент</a> · <a class="source" href="https://t.me/c/3934706992/1490/11960">Вопрос капитана</a> · <a class="source" href="https://t.me/c/3934706992/1490/11971">Ответ Яны о кураторах</a></details>
+      <details class="story case-file"><summary><span class="date">17 ноября · приложение</span><span class="case-title">Кнопку починили</span></summary><p>Терра вернула редактирование ДЗ и отчётов. Можно было поправить текст в приложении, а в Telegram оставалась старая версия. Контролёры получили сразу две реальности.</p><p class="punch">Пиксельный: «Класс. Теперь у отчёта есть режиссёрская версия».</p><a class="source" href="https://t.me/c/3934706992/19/13517">Что обновили</a></details>
+      <details class="story case-file"><summary><span class="date">18–19 ноября · открытый урок</span><span class="case-title">Победа с раппортом</span></summary><p>Дмитрий Эснер провёл открытый урок. В отчёте капитана «Империи» указаны восемь подтверждённых гостей и 6&nbsp;400 ₽ оплат. 19 ноября Елена объявила, что команда пригласила больше всех гостей и выиграла мастермайнд с Дмитрием.</p><p class="punch">Бумажный: «На раппорте впервые появился приз за то, что ты привёл друзей».</p><a class="source" href="https://t.me/c/3934706992/1490/13506">Отчёт капитана</a> · <a class="source" href="https://t.me/c/3934706992/1490/14884">Объявление победы</a></details>
+      <details class="story case-file"><summary><span class="date">5 ноября · урок о рождении</span><span class="case-title">Архетип на каждый урок</span></summary><p>Севиль предложила приходить на каждое занятие в новом архетипе. Для следующего урока выбрали образ Дитя: пастельные тона и лёгкие ткани.</p><p class="punch">Пиксельный: «Учиться через образ — отличная идея». Бумажный: «Главное, чтобы к архетипу приложили домашку».</p><a class="source" href="https://t.me/c/3934706992/1491/6057">Предложение Севиль и примеры</a></details>
+    </div>
+    <aside class="aside-story"><h3>Как переименовать команду за две недели</h3><p>3 ноября Никита позвал «Вентиляторов» на встречу. 19 ноября «Влияторы» уже сами собирались «как вентиляторы».</p><p>Пиксельный: «С таким охватом это официально отдел вентиляции».</p><a href="https://t.me/c/3934706992/1491/4919">Начало шутки</a> · <a href="https://t.me/c/3934706992/1491/15244">Продолжение</a></aside>
+    <aside class="aside-story"><h3>Что было на десерт?</h3><p>На открытом уроке 18 ноября Михаил Охотников засёк время. Шла сороковая минута перерыва, а у него ещё оставалась колбаса. Потом команда вынесла овощи и фрукты.</p><details><summary>Прочитать, чем кончился обед</summary><p>Михаил оборвал свой рассказ на самом интересном месте: «текст доступен зарегистрированным пользователям на тарифе „куратор“». Бумажный полез за десертом и вернулся с должностью.</p></details><a href="https://t.me/c/3934706992/20/14447">Открыть рассказ Михаила от 18 ноября ↗</a></aside>
+    <div class="gallery">
+      <figure><img src="assets/team.jpg" alt="Групповое фото участников перед открытым уроком" width="1280" height="960" loading="lazy"><figcaption>Команда в зелёном. Фото Ольги Олифир. <a href="https://t.me/c/3934706992/22/14246">Кадр</a></figcaption></figure>
+      <figure><img src="assets/lesson.jpg" alt="Дмитрий Эснер у экрана с презентацией" width="1280" height="960" loading="lazy"><figcaption>Дмитрий на занятии. Фото Анны Яковлевой. <a href="https://t.me/c/3934706992/22/14741">Кадр</a></figcaption></figure>
+    </div>
+  </section>
+  <section id="cartoon" class="wrap chapter" aria-labelledby="cartoon-title">
+    <p class="eyebrow">Мультвставка · сценка</p><h2 id="cartoon-title">Дежурный по раппорту</h2>
+    <p class="intro">Пиксельный уже подписал приказ о дежурстве Дмитрия. Бумажный принёс переписку с Яной. Короткая сценка о том, что могло бы случиться в «Империи».</p>
+    <div class="cinema" id="cinema"><video id="cartoon-video" controls playsinline preload="metadata" poster="assets/cartoon.jpg" aria-label="Дежурный по раппорту"><source src="dmitry.mp4" type="video/mp4"></video></div>
+    <details id="cartoon-script"><summary>О чём сценка</summary><p>Пиксельный берётся назначать Дмитрия на дежурство, Бумажный перехватывает реплику. Тут выясняется, что у Дмитрия совсем другой выход на сцену: открытый урок и мастермайнд для команды-победителя.</p></details>
+  </section>
+  <section id="teams" class="wrap chapter" aria-labelledby="teams-title">
+    <p class="eyebrow">Пиксельный у табло</p><h2 id="teams-title">Новости потока</h2>
+    <button class="voice" data-start="4" data-end="5" type="button">▶ Послушать ведущих</button>
+    <p class="intro">Срез с 28 октября по 18 ноября включительно. Сообщения включают фото и посты бота. Реакции посчитаны на момент выгрузки. В карточках команд — число сообщений в каждой командной ветке.</p>
+    <div class="stats">
+      <div><strong>11 003</strong><span>сообщения во всех ветках</span></div>
+      <div><strong>6 758</strong><span>реакций на них</span></div>
+      <div><strong>57</strong><span>аккаунтов в чате на 23 ноября</span></div>
+    </div>
+    <div class="news-extras">
+      <div class="news-card"><h3>Как менялся состав</h3><div class="funnel">
+        <div><span>Чат в первом выпуске</span><b>68</b><i style="--scale:100%"></i></div>
+        <div><span>Чат 23 ноября</span><b>57</b><i style="--scale:84%"></i></div>
+        <div><span>Имена в списках команд 19–20 ноября</span><b>47</b><i style="--scale:69%"></i></div>
+      </div><p>В списках сравниваем две даты. В счётчик Telegram входят ещё кураторы и боты.</p></div>
+      <div class="news-card"><h3>Сообщения по дням</h3><div class="day-chart" id="day-chart" aria-label="В каждом столбике число сообщений за день"></div><p id="day-detail" aria-live="polite">Нажми на столбец, чтобы увидеть точное число.</p></div>
+    </div>
+    <div class="team-heading" id="team-stage"><p class="eyebrow">На сцене</p><h2>Выступления команд</h2></div>
+    <div id="team-tabs" class="tabs" aria-label="Выбор команды"></div>
+    <p id="team-banter" class="duel-cue" aria-live="polite"><strong>Пиксельный:</strong> У каждой команды есть своя история. <span><strong>Бумажный:</strong> И своя папка с цифрами.</span></p>
+    <div class="team-grid">
+      <article class="team" style="--bar:100%;--team:#86a5ff"><div><h3>Влияторы</h3><b>2 510</b></div><span class="meter"></span><img src="assets/vliyatory.jpg" alt="Афиша команды Влияторы" loading="lazy" class="team-poster"><p>Екатерина Ткачёва свела отчёты и домашку за 16 ноября. В обоих списках 12 из 12. Через два дня Татьяна Суязова собрала 12 из 12 отчётов и минуток.</p><a href="https://t.me/c/3934706992/1491/13395">Сводка Ткачёвой</a></article>
+      <article class="team" style="--bar:94.4%;--team:#fbb575"><div><h3>Вершители</h3><b>2 369</b></div><span class="meter"></span><img src="assets/vershiteli.jpg" alt="Афиша команды Вершители" loading="lazy" class="team-poster"><p>«Мы же К-команда!» Ирина Сергеева предложила ехать на благопроект всей командой и вместе снять видеотчёт.</p><a href="https://t.me/c/3934706992/1493/12160">Предложение Ирины</a></article>
+      <article class="team" style="--bar:64.9%;--team:#ed736f"><div><h3>Империя влияния</h3><b>1 629</b></div><span class="meter"></span><img src="assets/imperia.jpg" alt="Афиша команды Империя влияния" loading="lazy" class="team-poster"><p>Четыре дня с отчётами 12 из 12 за неделю 11–17 ноября. Наталья Аржавитина держала аренду, Яна Савина помогла с регламентом. Следом команда взяла мастермайнд.</p><a href="https://t.me/c/3934706992/1490/13506">Отчёт капитана</a></article>
+      <article class="team" style="--bar:63.3%;--team:#a7cd79"><div><h3>Энергия влияния</h3><b>1 590</b></div><span class="meter"></span><img src="assets/energia.jpg" alt="Афиша команды Энергия влияния" loading="lazy" class="team-poster"><p>Ирина Леккерева закрыла пятницу с отчётами вовремя и отправила команду отдыхать. На той же неделе Алексей Майоров и Роман Васильев взяли на себя руководство.</p><a href="https://t.me/c/3934706992/1492/12436">Пятничная сводка</a> · <a href="https://t.me/c/3934706992/1492/12184">Передача роли</a></article>
+    </div>
+    <details class="roster"><summary>Сколько человек осталось</summary>
+      <p><strong>Чат потока.</strong> В выгрузке первого выпуска было 68 аккаунтов, 23 ноября Telegram показывает 57. Разница — 11 аккаунтов. В первой выгрузке отдельно посчитаны 98 учеников за всё время и 58 на дату выпуска. Численность чата включает команду школы и ботов.</p>
+      <p><strong>Империя.</strong> В сводке первого выпуска 13 человек, в отчёте от 17 ноября — 12, в таблице от 20 ноября — 10.</p>
+      <p><strong>Смена команды.</strong> По графику из отчёта капитана Виктор ещё контролировал «Империю» с 18 по 20 ноября. В опубликованном 20 ноября списке «Влияторов» он уже в другой команде. <a href="https://t.me/c/3934706992/1490/13506">График контролёров</a> · <a href="https://t.me/c/3934706992/1491/15926">Список «Влияторов»</a></p>
+      <p><strong>Расставания с командой и школой.</strong> 19 ноября Аника написала «Дорогие я вас покидаю». <a href="https://t.me/c/3934706992/1490/15166">Сообщение Аники</a> Андрей Харизма-Сокуров 18 ноября отдельно написал, что прекращает посещение школы. <a href="https://t.me/c/3934706992/1493/14534">Сообщение Андрея</a></p>
+      <p>В первом выпуске в командных списках было 57 имён, в списках 19–20 ноября — 47. В изменении учтены переходы между командами. Число прекративших обучение можно установить по школьному реестру.</p>
+      <p>В закрепе Владимир Хачатуров, Наталья Аржавитина, Елена Ковалева, Арина Каменская, Юрий Столбовский, Регина Ширеева, Владислав Пигузов, Эллина Шевчук, Татьяна Боровская и Ирина Макогон.</p>
+      <p><strong>Четыре команды.</strong> В первом выпуске в командных списках было 57 имён. В списках 19–20 ноября — 47. Изменение отражает состав на две даты, включая переходы между командами. Точное число людей, прекративших обучение за этот период, зависит от школьного реестра.</p>
+      <div class="roster-grid">
+        <article><h3>Империя влияния · 13 → 10</h3><p>Владимир Хачатуров, Наталья Аржавитина, Елена Ковалева, Арина Каменская, Юрий Столбовский, Регина Ширеева, Владислав Пигузов, Эллина Шевчук, Татьяна Боровская и Ирина Макогон.</p><a href="https://t.me/c/3934706992/1490/15691">Таблица от 20 ноября</a></article>
+        <article><h3>Влияторы · 16 → 12</h3><p>Севиль Яхьяева, Мария Мазко, Виктор Иванилов, Роман Богданов, Галина Наговицына, Татьяна Суязова, Екатерина Ткачёва, Марина Коньшина, Любовь Деева, Маргарита Лебедева, Евгения Лаптева, Екатерина Красавина.</p><a href="https://t.me/c/3934706992/1491/15926">Список от 20 ноября</a></article>
+        <article><h3>Вершители · 13 → 11</h3><p>Ирина Сергеева, Никита Васильев, Анна Кучеренок, Ксения Гейер, Георгий Исаков, Дмитрий Гавриленко, Андрей Мамалыженко, Екатерина Васильева, Юлия Шкурко, Анжей Гольцыдер, Ирина Веселова.</p><a href="https://t.me/c/3934706992/1493/14856">Список от 19 ноября</a></article>
+        <article><h3>Энергия влияния · 15 → 14</h3><p>Анна Яковлева, Александр Федоров, Екатерина Ракова, Карина Раменская, Алексей Сафаралеев, Ольга Полянская, Роман Васильев, Павел Ищенко, Ирина Леккерева, Алексей Майоров, Евгения Миланкина, Анна Алексеевна Яковлева, Дмитрий Якушин, Дарина Яковлева.</p><a href="https://t.me/c/3934706992/1492/13539">Закреплённая сводка</a></article>
+      </div>
+      <a href="https://t.me/c/3934706992/1490/15691">Таблица «Империи»</a> · <a href="https://t.me/c/3934706992/1491/14858">Сводка «Влияторов»</a> · <a href="https://t.me/c/3934706992/1493/14534">Ветка «Вершителей»</a>
+    </details>
+    <details class="branch-list"><summary>Все ветки потока</summary>
+      <p>В срезе до вечера 18 ноября — 20 веток с сообщениями. Ветка выпускного появилась после экватора.</p>
+      <dl>
+        <div><dt>Влияторы</dt><dd>2 510</dd></div><div><dt>Вершители</dt><dd>2 369</dd></div>
+        <div><dt>Империя влияния</dt><dd>1 629</dd></div><div><dt>Энергия влияния</dt><dd>1 590</dd></div>
+        <div><dt>Отчёты</dt><dd>1 074</dd></div><div><dt>Болталка</dt><dd>468</dd></div>
+        <div><dt>Минутка и NPS</dt><dd>445</dd></div><div><dt>Домашние задания</dt><dd>239</dd></div>
+        <div><dt>Вопрос/ответ</dt><dd>204</dd></div><div><dt>Фото и видео встреч</dt><dd>197</dd></div>
+        <div><dt>Совместный движ</dt><dd>92</dd></div><div><dt>Важная информация</dt><dd>52</dd></div>
+        <div><dt>Вопросы к наставнику</dt><dd>49</dd></div><div><dt>Штрафы</dt><dd>48</dd></div>
+        <div><dt>Аренда коворкинга</dt><dd>13</dd></div><div><dt>Презентации</dt><dd>10</dd></div>
+        <div><dt>Казна</dt><dd>5</dd></div><div><dt>Подкасты Эснера</dt><dd>4</dd></div>
+        <div><dt>Общая ветка</dt><dd>4</dd></div><div><dt>Правила</dt><dd>1</dd></div>
+      </dl>
+    </details>
+  </section>
+  <section id="curators" class="wrap chapter"><p class="eyebrow">Звёзды в зале</p><h2>Кураторы и модераторы</h2><div class="news-grid"><article class="news-card"><p class="eyebrow"></p><h3>Яна Савина</h3><p>Помогла «Империи» согласовать график и формат отчётов контролёров.</p><a href="https://t.me/c/3934706992/1490/11916">Сообщение ↗</a></article><article class="news-card"><p class="eyebrow"></p><h3>Елена и Евгений Сипайло</h3><p>Вели «Империю» и объявили победу команды после открытого урока.</p><a href="https://t.me/c/3934706992/1490/14884">Победа команды ↗</a> · <a href="https://t.me/c/3934706992/1490/13506">Отчёт капитана ↗</a></article><article class="news-card"><p class="eyebrow"></p><h3>Екатерина Матвеева</h3><p>Объяснила, как работает редактирование отчётов в приложении и уведомление в Telegram.</p><a href="https://t.me/c/3934706992/19/13517">Сообщение ↗</a></article><article class="news-card"><p class="eyebrow"></p><h3>Дмитрий Эснер</h3><p>Вёл открытый урок. Команде-победителю достался мастермайнд с ним.</p><a href="https://t.me/c/3934706992/22/14741">Фото с урока ↗</a> · <a href="https://t.me/c/3934706992/1490/14884">Победа команды ↗</a></article></div></section>
+  <section id="awards" class="wrap chapter" aria-labelledby="awards-title">
+    <p class="eyebrow">Церемония</p><h2 id="awards-title">Золотая Люсиль</h2>
+    <button class="voice" data-start="6" data-end="7" type="button">▶ Поспорить за премию</button>
+    <p class="intro nominations">Пиксельный: «И отдельный респект тем, кто людей собрал снаружи». Бумажный: «В конверты идут конкретные дела: кто свёл списки, поддержал команду и довёл встречу до результата».</p>
+    <div class="award-stage"><img class="trophy" src="assets/award.jpg" alt="Статуэтка «Золотая Люсиль»" loading="lazy"><div class="awards">
+      <details class="award"><summary><i>✦</i><span>Голос «Вершителей»</span><small>Вскрыть конверт</small></summary><div class="winner"><h3>Михаил Охотников</h3><p>707 сообщений в ветке «Вершителей» за период с 28 октября по 18 ноября. По всем веткам у Михаила 828 сообщений. Пиксельный готов поделиться микрофоном. По расписанию.</p><a href="https://t.me/c/3934706992/1493/14562">Сообщение Михаила в ветке ↗</a></div></details>
+      <details class="award"><summary><i>✦</i><span>Реакция зала</span><small>Вскрыть конверт</small></summary><div class="winner"><h3>Севиль Яхьяева</h3><p>390 реакций на её сообщения в ветке «Влияторов» за период с 28 октября по 18 ноября. Общий рейтинг учитывает все ветки, там у неё 419.</p><a href="#rating">Найти Севиль в рейтинге ↗</a></div></details>
+      <details class="award"><summary><i>✦</i><span>Двенадцать из двенадцати</span><small>Вскрыть конверт</small></summary><div class="winner"><h3>Екатерина Ткачёва</h3><p>Сверила и отчёты, и ДЗ. Теперь «вроде всё сдали» можно произносить без «вроде».</p><a href="https://t.me/c/3934706992/1491/13395">Сводка</a></div></details>
+      <details class="award"><summary><i>✦</i><span>Контролёр с доставкой тепла</span><small>Вскрыть конверт</small></summary><div class="winner"><h3>Ирина Леккерева</h3><p>Собрала отчёты и лично доставила команде «порцию тепла, улыбок и сладких снов».</p><a href="https://t.me/c/3934706992/1492/12062">Сообщение Ирины</a></div></details>
+      <details class="award"><summary><i>✦</i><span>Подхват без фанфар</span><small>Вскрыть конверт</small></summary><div class="winner"><h3>Яна Савина</h3><p>Помогла согласовать график контролёров и прояснила, кто остаётся кураторами.</p><a href="https://t.me/c/3934706992/1490/11916">Согласованный график</a> · <a href="https://t.me/c/3934706992/1490/11971">Ответ о кураторах</a></div></details>
+      <details class="award"><summary><i>✦</i><span>Влияние вне чата</span><small>Вскрыть конверт</small></summary><div class="winner"><h3>Империя влияния</h3><p>Привели гостей и выиграли мастермайнд. Тут оба ведущих замолчали и похлопали.</p><a href="https://t.me/c/3934706992/1490/14884">Итог открытого урока</a></div></details>
+    </div>
+    </div>
+    <p id="award-banter" class="duel-cue" aria-live="polite"><strong>Пиксельный:</strong> Тут отмечаем людей за дело. <span><strong>Бумажный:</strong> Я проверю конверты. И микрофон.</span></p>
+  </section>
+  <section class="wrap chapter" id="heroes"><p class="eyebrow">Дежурство</p><h2>Контролёры недели</h2><div class="news-grid"><article class="news-card"><p class="eyebrow">Влияторы</p><h3>Галина Наговицына</h3><p>11 ноября свела отчёты, минутку и NPS. Во всех трёх списках 12 из 12.</p><a href="https://t.me/c/3934706992/1491/11190">Сообщение ↗</a></article><article class="news-card"><p class="eyebrow">Влияторы</p><h3>Екатерина Ткачёва</h3><p>16 ноября собрала 12 отчётов и 12 ДЗ. Проверила, что все пункты на месте.</p><a href="https://t.me/c/3934706992/1491/13395">Сообщение ↗</a></article><article class="news-card"><p class="eyebrow">Влияторы</p><h3>Татьяна Суязова</h3><p>После открытого урока 12 из 12 сдали отчёты и минутки с NPS.</p><a href="https://t.me/c/3934706992/1491/14858">Сообщение ↗</a></article><article class="news-card"><p class="eyebrow">Энергия влияния</p><h3>Ирина Леккерева</h3><p>Закрыла пятницу и отправила команду отсыпаться. Редкая роскошь в ШЛВ.</p><a href="https://t.me/c/3934706992/1492/12436">Сообщение ↗</a></article><article class="news-card"><p class="eyebrow">Вершители</p><h3>Юлия Шкурко</h3><p>Собирала отчёты по ДЗ и по ежедневным отчётам. Разнесла два списка, чтобы было что проверить.</p><a href="https://t.me/c/3934706992/1493/13442">Сообщение ↗</a></article><article class="news-card"><p class="eyebrow">Империя влияния</p><h3>Татьяна Боровская и Юрий Столбовский</h3><p>Передали дежурство по графику, который согласовали с Яной.</p><a href="https://t.me/c/3934706992/1490/11916">Сообщение ↗</a></article></div>
+  <h2 class="outside-title">Жизнь за пределами чата</h2><div class="news-grid"><article class="news-card"><p class="eyebrow"></p><h3>Зал на открытом уроке</h3><p>«Империя» выиграла мастермайнд за приглашённых гостей. На 28 ноября команда уже выбрала время.</p><a href="https://t.me/c/3934706992/1490/17456">Сообщение ↗</a></article><article class="news-card"><p class="eyebrow"></p><h3>Приют для животных</h3><p>Влияторы выехали к собакам 22 ноября. К 12:21 Мария сообщила, что команда уже погуляла с двумя хвостиками. Виктор шутил, что большая слюнявая собака помогает знакомиться в парке.</p><a href="https://t.me/c/3934706992/1491/15915">План и список вещей ↗</a> · <a href="https://t.me/c/3934706992/1491/16983">Отчёт с прогулки ↗</a> · <a href="https://t.me/c/3934706992/1491/16960">Шутка Виктора ↗</a></article><article class="news-card"><p class="eyebrow"></p><h3>Поездка всей командой</h3><p>Ирина Сергеева из «Вершителей» предложила поехать на благопроект вместе и снять общий отчёт.</p><a href="https://t.me/c/3934706992/1493/12160">Предложение Ирины ↗</a></article><article class="news-card"><p class="eyebrow"></p><h3>Планы на выходные</h3><p>Юрий и Ирина из «Империи» решили в субботу поехать в «Ночлежку», а в воскресенье — к лошадям.</p><a href="https://t.me/c/3934706992/1490/17253">План команды ↗</a></article><article class="news-card"><p class="eyebrow"></p><h3>Люди, которые встретились в городе</h3><p>Анна позвала «Энергию» на кофе 14 ноября, а затем предложила экскурсию в красную комнату.</p><a href="https://t.me/c/3934706992/1492/11615">Приглашение на встречу ↗</a></article><article class="news-card"><p class="eyebrow"></p><h3>Баба-яга на выпускном</h3><p>Юля Шкурко предложила костюмированный номер. Ветка выпускного сразу стала интереснее.</p><a href="https://t.me/c/3934706992/16091/17505">Предложение Юли ↗</a></article></div></section>
+  <section class="wrap chapter" id="rating"><p class="eyebrow">Битва команд</p><h2>Рейтинг чата</h2>
+    <p class="intro">Сообщения и полученные реакции с 28 октября по 18 ноября. Здесь ученики, чьи аккаунты удалось связать с командными списками. Команда Виктора указана по списку 20 ноября.</p>
+    <div class="rank-tools"><label>Найти себя <input id="rank-search" type="search" placeholder="Имя или фамилия"></label><label>Команда<select id="rank-team"><option value="">Все команды</option></select></label><label>Порядок<select id="rank-order"><option value="2">Сообщения</option><option value="3">Реакции</option></select></label></div>
+    <div class="rank-table"><table><thead><tr><th scope="col">Имя</th><th scope="col" class="rank-group">Команда</th><th scope="col">Сообщения</th><th scope="col">Реакции</th></tr></thead><tbody id="rank-body"></tbody></table></div>
+    <p id="rank-status" aria-live="polite"></p><button class="voice" id="rank-more" type="button">Показать всех</button>
+    <aside id="rank-mikhail" class="aside-story" hidden><h3>Михаил Охотников</h3><p>828 сообщений и 505 реакций по всем веткам. Из них 707 сообщений в ветке «Вершителей». Именно за них Михаил получил «Золотую Люсиль».</p><button class="voice" id="open-mikhail" type="button">Вскрыть конверт Михаила</button></aside>
+  </section>
+  <footer class="wrap chapter closing">
+    <p class="eyebrow">Следующий акт</p><h2>Дальше вы.</h2>
+    <p>До финиша четыре занятия. «Империя» обсуждает поездки в «Ночлежку» и к лошадям, а в ветке выпускного Юля Шкурко предлагает номер с Бабой-ягой. Бумажный уже интересуется, кому достанется ступа.</p>
+    <button class="voice" data-start="8" data-end="9" type="button">▶ Финальная перебивка</button>
+    <details class="script"><summary>Сценарий выпуска</summary><div class="script-grid"></div></details>
+    <div class="mail-card"><img src="assets/negan/wave.png" alt="" width="32" height="48"><div><h3>Вопросы, пожелания, предложения</h3><p>Есть своя история из команды, пропущенная номинация или правка к цифрам? Напиши Вове, он добавит к следующему выпуску.</p><a class="primary" href="https://t.me/vh220">Написать Вове в Telegram</a><button class="voice" type="button" data-show>▶ Смотреть шоу ещё раз</button></div></div>
+    <div class="footer-links"><a href="https://t.me/c/3934706992/1490/17253">Обсуждение благопроекта</a><a href="https://t.me/c/3934706992/16091/17505">Ветка выпускного</a><a href="https://t2754445-debug.github.io/shlv41/">Первый выпуск</a><a href="#start">К началу ↑</a></div>
+  </footer>
+</main>
+<dialog id="episode-player" aria-label="Шоу «Экватор влияния»">
+  <div class="player-inner">
+    <div class="player-top"><span id="player-chapter"></span><button type="button" id="player-close" aria-label="Закрыть шоу">✕</button></div>
+    <div class="player-progress" id="player-progress" aria-label="Главы шоу"></div>
+    <div class="player-set" id="player-set">
+      <button id="film-shortcut" type="button"><span aria-hidden="true">▶</span> Мульт про Дмитрия</button>
+      <video id="player-video" playsinline controls preload="none" src="dmitry.mp4" aria-label="Мультвставка «Дежурный по раппорту»" hidden></video>
+      <div class="player-curtain" aria-hidden="true"><i></i><i></i></div>
+      <div class="credits-sign"><small>ШЛВ 41 · финал выпуска</small><b>До второго акта!</b></div>
+    </div>
+    <div class="player-caption" aria-live="polite"><strong id="player-speaker"></strong><p id="player-line"></p></div>
+    <div class="player-controls" aria-label="Управление просмотром">
+      <button type="button" id="player-prev">← Назад</button><button type="button" id="player-pause">Пауза</button><button type="button" id="player-next">Дальше →</button>
+    </div>
+  </div>
+</dialog>
+</body>
+</html>
+

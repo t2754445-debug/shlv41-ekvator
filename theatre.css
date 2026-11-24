@@ -1,0 +1,57 @@
+/* Портал сцены, подвесная вывеска и огни переднего края. */
+.marquee {
+  isolation: isolate;
+  overflow: hidden;
+  position: relative;
+  min-height: clamp(35rem, 83svh, 53rem);
+  padding: clamp(3.3rem, 7vw, 6.2rem) 1.65rem clamp(3.8rem, 7vw, 6rem);
+  background:
+    radial-gradient(ellipse at 12% 2%, #ffcb842d, transparent 30%),
+    radial-gradient(ellipse at 88% 2%, #ffcb8430, transparent 30%),
+    radial-gradient(ellipse at 50% 40%, transparent 30%, #21041695 100%),
+    repeating-linear-gradient(90deg,#4c0b22 0,#7d172c 8px,#ac233b 19px,#e44754 26px,#a82038 33px,#600e27 46px,#440921 54px);
+  border-bottom: 0;
+}
+.marquee::before {
+  content: ""; position: absolute; z-index: -1; inset: 0;
+  background: linear-gradient(180deg,#210315 0,#510d22 6px,#ca764b 7px,#ffcf78 9px,#6a2330 12px,transparent 15px),
+    linear-gradient(169deg, #fff3c31a,transparent 24%),
+    linear-gradient(191deg, #ffc68d24,transparent 24%);
+  pointer-events: none;
+}
+.marquee-board {
+  width: min(100%, 48rem);
+  padding: clamp(1.6rem,3.4vw,2.6rem) clamp(1.2rem,4vw,3.6rem);
+  border: 2px solid #f2bc65; border-radius: 1rem;
+  background: radial-gradient(ellipse at 50% 18%, #302441 0, #19172e 53%, #0d1022 100%);
+  box-shadow: 0 0 0 5px #471a28,0 0 0 9px #d5944b,0 2.1rem 3rem #230314ac;
+}
+.marquee-board::before {
+  content: ""; position:absolute; left:16%; right:16%; bottom:calc(100% + 9px); height:12rem; z-index:-1;
+  border-inline: 3px solid #593a2f; box-shadow:inset 2px 0 #edbb80,inset -2px 0 #edbb80;
+  pointer-events:none;
+}
+.marquee-board::after {inset:-.48rem;border:0;border-radius:1.34rem;outline:3px dotted #ffdf94;outline-offset:0}
+.marquee h1 {font-size:clamp(3.2rem,7.8vw,6.75rem);margin:.9rem 0 1rem;line-height:.88;letter-spacing:-.055em}
+.marquee .title-word {text-shadow:0 .045em #4a263d,0 .075em #080c20}
+.marquee .title-word + .title-word {margin-top:.045em}
+.house-bill {display:flex;align-items:center;justify-content:center;gap:1em;color:#ffe2a0;font-size:clamp(.65rem,1vw,.82rem);letter-spacing:.17em}
+.house-bill span,.house-bill b {color:#efc984;font-size:.88em}
+.house-bill span {border-right:1px solid #8d7058;padding-right:1em}
+.house-bill b {border-left:1px solid #8d7058;padding-left:1em}
+.marquee-sub {max-width:31rem;font-size:clamp(.97rem,1.7vw,1.26rem);font-weight:700;line-height:1.34;color:#f6eee6;text-wrap:balance}
+.marquee-actions {margin-top:1.25rem}
+.marquee-actions .primary {border:1px solid #ffc056;background:#ff792e;color:#261320}
+.house-ramp {pointer-events:none;position:absolute;bottom:0;left:0;right:0;height:1.2rem;border-top:2px solid #bc7148;background:linear-gradient(#742c30,#391722 38%,#180d16 95%);box-shadow:0 -1rem 2.5rem #48111b}
+.house-ramp::after {content:"";position:absolute;inset:-.64rem 0 .22rem;background:radial-gradient(ellipse 8px 5px at 50% 60%,#fffae5 30%,#ffd081 51%,#a76538 69%,#38242a 84%,transparent 100%) center / clamp(45px,7vw,110px) 100% repeat-x;filter:drop-shadow(0 -3px 5px #ffba61)}
+@media(max-width:760px){
+  .marquee {min-height:min(40rem,79svh);padding:3.15rem 1.45rem 3.5rem}
+  .marquee h1 {font-size:clamp(3.05rem,13.3vw,5.2rem)}
+  .marquee-board{padding:1.45rem .8rem 1.55rem}
+  .marquee-actions {gap:.55rem}
+  .marquee-actions button,.marquee-actions a{min-height:44px}
+}
+@media(max-height:480px) and (orientation:landscape){
+  .marquee{min-height:0;padding-block:2rem}
+  .marquee h1{font-size:3.2rem}
+}
